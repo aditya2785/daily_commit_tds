@@ -1,5 +1,9 @@
 name: Daily Commit
 
+# Give the workflow permission to push
+permissions:
+  contents: write
+
 # Schedule workflow to run daily at 02:30 UTC
 on:
   schedule:
@@ -22,5 +26,5 @@ jobs:
         run: |
           echo "Daily update: $(date)" >> daily_update.txt
           git add daily_update.txt
-          git commit -m "Automated daily commit $(date)" || echo "No changes to commit"
-          git push
+          git commit --allow-empty -m "Automated daily commit $(date)"
+          git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/aditya2785/daily_commit_tds.git
