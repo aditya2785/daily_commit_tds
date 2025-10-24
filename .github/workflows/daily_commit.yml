@@ -1,10 +1,12 @@
 name: Daily Commit
 
-# Schedule workflow to run daily at 02:30 UTC
+permissions:
+  contents: write
+
 on:
   schedule:
-    - cron: '30 2 * * *'   # Runs daily at 02:30 UTC
-  workflow_dispatch:       # Allows manual trigger
+    - cron: '30 2 * * *'  # Runs daily at 02:30 UTC
+  workflow_dispatch:
 
 jobs:
   commit:
@@ -13,7 +15,7 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
 
-      - name: Configure Git
+      - name: 24f2005506@ds.study.iitm.ac.in
         run: |
           git config user.name "DevSync Bot"
           git config user.email "24f2005506@ds.study.iitm.ac.in"
@@ -22,5 +24,5 @@ jobs:
         run: |
           echo "Daily update: $(date)" >> daily_update.txt
           git add daily_update.txt
-          git commit -m "Automated daily commit $(date)" || echo "No changes to commit"
-          git push
+          git commit --allow-empty -m "Automated daily commit $(date)"
+          git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/aditya2785/daily_commit_tds.git
