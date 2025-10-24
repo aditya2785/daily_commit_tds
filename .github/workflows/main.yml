@@ -15,7 +15,7 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
 
-      - name: Configure Git with email 24f2005506@ds.study.iitm.ac.in
+      - name: 24f2005506@ds.study.iitm.ac.in
         run: |
           git config user.name "DevSync Bot"
           git config user.email "24f2005506@ds.study.iitm.ac.in"
