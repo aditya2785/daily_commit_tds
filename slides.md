@@ -1,21 +1,34 @@
 ---
 marp: true
-theme: custom-theme
+theme: custom-tech
 paginate: true
-backgroundImage: url('https://images.unsplash.com/photo-1518770660439-4636190af475')
 style: |
   section {
-    font-family: Arial, sans-serif;
+    font-family: "Segoe UI", Arial, sans-serif;
     background-color: #0f172a;
-    color: #f8fafc;
+    color: #f1f5f9;
   }
   h1 {
     color: #38bdf8;
   }
+  h2 {
+    color: #7dd3fc;
+  }
   footer {
+    position: absolute;
+    bottom: 20px;
     font-size: 14px;
+    opacity: 0.7;
   }
 ---
+
+# Product Documentation
+## Marp Presentation
+
+**Technical Writer:** Aditya Jha  
+**Email:** 24f2005506@ds.study.iitm.ac.in
+
+<footer>Maintained with Marp & GitHub</footer>
 
 ---
 
@@ -23,35 +36,28 @@ style: |
 
 # Background Image Slide
 
-This slide contains a full background image as required by Marp.
-
-# Product Documentation
-### Marp Presentation  
-**Technical Writer:** Aditya Jha  
-**Email:** 24f2005506@ds.study.iitm.ac.in
+This slide demonstrates a full background image using Marp directives.
 
 ---
 
-# Why Marp?
+# Why Use Marp?
 
-- Version control friendly  
+- Easy version control  
 - Markdown based  
-- Exportable to:
-  - PDF
-  - PPTX
-  - HTML
+- Export to PDF, PPT, HTML  
+- Professional documentation
 
 ---
 
 # Algorithmic Complexity
 
-Let the time complexity be:
+Time complexity of an algorithm:
 
 $$
 T(n) = n^2 + 3n + 2
 $$
 
-Asymptotically:
+Asymptotic notation:
 
 $$
 T(n) = O(n^2)
@@ -61,16 +67,13 @@ This represents quadratic time complexity.
 
 ---
 
-# Custom Styling Example
+# Custom Styling Demonstration
 
-This slide uses:
-- Dark theme
-- Custom font
-- Background image
+This presentation includes:
+- Custom theme styling
+- Background image slide
 - Page numbers
+- Mathematical equations
+- GitHub maintainable format
 
-Footer Example:
-
-<footer>
-Maintained via GitHub & Marp
-</footer>
+<footer>End of Presentation</footer>
