@@ -17,6 +17,14 @@ style: |
   }
 ---
 
+---
+
+<!-- _backgroundImage: url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee") -->
+
+# Background Image Slide
+
+This slide contains a full background image as required by Marp.
+
 # Product Documentation
 ### Marp Presentation  
 **Technical Writer:** Aditya Jha  
